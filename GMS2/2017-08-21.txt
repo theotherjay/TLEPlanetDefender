@@ -1,0 +1,15 @@
+I spent some time today setting up my environment (my dell laptop) to debug/deploy to an android device.  I had to perform a few steps to make this happen:
+
+1. Get the correct version of the Android SDK and tools setup.  There is no GUI for the stand-alone SDK Manager anymore.  To get the Android SDK setup, I had to install Android Studio.  
+2. Configure SDK and an Android Emulator:
+	- Open Android Studio and go to: Tools > Android > SDK
+		- Install the necessary SDK and SDK tool components
+	- Go to Tools > Android > AVD
+		- Create an appropriate emulator using the version of the Android SDK downloaded earlier
+		- Run that emulator
+	- Run game in Game maker.  If there are errors, look at the lint results html file.
+		- I had an error stating that I had incompatible Gradle versions.  It said that the build tools couldn't be alower version than the SDK.  Googling this showed me that I needed to change my settings in Game Maker Studio
+			- Go to Game Maker > Global Game Settings > Android:  I needed to set my build tools value to a valid build tools value that my selected SDK would use.  I was able to look at the path searched for this from within the game maker debug window (the lint output) and then dug in that folder to find a valid build tool version (C:\Users\Jason\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-v4\24.2.1 for SDK version 24.0.1).
+
+
+Once all of this was done, I was able to run the game in the emulator.  I saw that my game did not adhere to my fixed window sizing causing my GUI elements to be misplaced on the screen.

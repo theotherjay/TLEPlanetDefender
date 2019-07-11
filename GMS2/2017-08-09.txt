@@ -1,0 +1,22 @@
+Functions/WeaponFiring/fn_objPulseCannonLogic
+- creates instance of objPulseCannonController (this object has scripts plugged into create, step, and alarm0)
+- sets alarm[0] delay to PULSE_CANNON_TOTALFIRINGSTEPS (represents how long the pulse cannon fires pulse projectiles
+- sets shotDelay to PULSE_CANNON_SHOTDELAY (time between pulse projectile firings)
+
+
+
+ojbPulseCannonController has sub scripts in fn_objPulseCannonLogic file:
+- scr_objPulseCannonLogic_alarm0 - calls instance_destroy() based on the above PULSE_CANNON_TOTALFIRINGSTEPS time given to the controller
+- scr_objPulseCannonLogic_step 
+	- it creates instances of the pulse cannon projectile 
+	- hard-codes the alarm[0] for the projectile which ultimately determines how far the projectile will travel before it is destroyed.
+
+
+I've changed:
+- fn_objPulseCannonLogic.scr_objPulseCannonLogic_step to set alarm[0] = 200 (causing pulse projectile to travel farther)
+- scr_objPulseCannonProjectile.scr_objPulseCannonProjectile_step: lengthdir_x and lengthdir_y from (7,angle) to (1, angle)
+	- I actually changed this back after I fixed the collision issue.
+
+
+
+Big idea of the day:  You can add a "game start" event onto any object which executes after the create event on that object's instances.  It will only execute once during the run of the game so it is good for global variable initialization.  Since it has to be added to an actual object, it seems to be created to be used in conjunction with global settings related to that object.  There is only one object in the this game that is setup to use the game start event.  It is the LaunchController.  An instance of the LaunchController object lives in the Launch room and sets the player's cash to CASH_STARTING macro.
