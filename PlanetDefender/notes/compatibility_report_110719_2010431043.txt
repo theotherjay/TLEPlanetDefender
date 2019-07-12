@@ -1,0 +1,84 @@
+Converting GML script: ${project_dir}\scripts\scr_launchController_social\scr_launchController_social.gml
+Converted string - line 4: 'type' -> "type"
+Converted string - line 5: 'loaded' -> "loaded"
+Converted string - line 6: 'banner_load' -> "banner_load"
+Converted string - line 10: 'width' -> "width"
+Converted string - line 11: 'height' -> "height"
+
+Converting GML script: ${project_dir}\scripts\RacePlanetSelection\RacePlanetSelection.gml
+Converted description /// @description Race Select RIGHT Arro
+
+Converting GML script: ${project_dir}\scripts\scr_rm_command_create\scr_rm_command_create.gml
+Converted builtin - line 19: view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin - line 18: view_hview -> __view_get( e__VW.HView, 0 )
+
+Converting GML script: ${project_dir}\scripts\scr_DefendPlayerMap_objZoomBtn_leftPress\scr_DefendPlayerMap_objZoomBtn_leftPress.gml
+Converted builtin - line 1: view_visible[0] -> __view_get( e__VW.Visible, 0 )
+Converted builtin - line 2: view_visible[1] -> __view_get( e__VW.Visible, 1 )
+Converted builtin - line 1: view_visible[0] = !__view_get( e__VW.Visible, 0 ) -> __view_set( e__VW.Visible, 0, !__view_get( e__VW.Visible, 0 ) )
+Converted builtin - line 2: view_visible[1] = !__view_get( e__VW.Visible, 1 ) -> __view_set( e__VW.Visible, 1, !__view_get( e__VW.Visible, 1 ) )
+
+Converting GML script: ${project_dir}\scripts\fn_GetPowerWeaponText\fn_GetPowerWeaponText.gml
+Converted description /// @description fn_GetPowerWeaponText(PowerWeaponEnum
+
+Converting GML script: ${project_dir}\scripts\fn_GenerateSpawns\fn_GenerateSpawns.gml
+Converted description /// @description fn_GenerateSpawns(difficulty, minSpawnType, maxSpawnType
+
+Converting GML script: ${project_dir}\scripts\fn_objRocketBarrageLogic\fn_objRocketBarrageLogic.gml
+Converted description /// @description fn_objRocketBarrageLogic(targetX, targetY, damage, spreadRadius
+
+Converting GML script: ${project_dir}\scripts\fn_firePlanetMissile\fn_firePlanetMissile.gml
+Converted description /// @description fn_firePlanetMissile(x,   y,   targetX, targetY, missileName, damage
+
+Converting GML script: ${project_dir}\scripts\fn_fireLaser\fn_fireLaser.gml
+Converted description /// @description fn_fireLaser(startX, startY, targetId, damage, firingTime, objLaserType
+
+Converting GML script: ${project_dir}\scripts\fn_IsClicked_Planet\fn_IsClicked_Planet.gml
+Converted description /// @description fn_IsClicked_Planet(
+
+Converting GML script: ${project_dir}\scripts\fn_findTarget\fn_findTarget.gml
+Converted description /// @description fn_findTarget(x,  y,   searchDiameter
+
+Converting GML script: ${project_dir}\scripts\fn_objPulseCannonLogic\fn_objPulseCannonLogic.gml
+Converted description /// @description fn_objPulseCannonLogic(target, damage
+
+Converting GML script: ${project_dir}\scripts\fn_getHexX\fn_getHexX.gml
+Converted description /// @description fn_getHexX(i,j,hexWidth
+
+Converting GML script: ${project_dir}\scripts\fn_getHexY\fn_getHexY.gml
+Converted description /// @description fn_getHexY(j,hexWidth
+
+Converting GML script: ${project_dir}\scripts\fn_genHexGridForCircle\fn_genHexGridForCircle.gml
+Converted description /// @description fn_genHexGridForCircle(cirX,cirY,cirWidth,hexWidth
+
+Converting GML script: ${project_dir}\scripts\fn_BarrageRocket_explosion\fn_BarrageRocket_explosion.gml
+Converted description /// @description fn_BarrageRocket_explosion(damage
+
+Converting GML script: ${project_dir}\scripts\objHexTile_LeftPress\objHexTile_LeftPress.gml
+Converted description /// @description ///////////////////////////////////////////////////////////////////
+
+Converting GML script: ${project_dir}\scripts\scr_Particle_System\scr_Particle_System.gml
+Converted description /// @description create the particle system: run this script in the gameStart scrip
+
+!!! Font Conthrax uses a font (Conthrax Sb) not installed on this system - Font has NOT been regenerated
+GameMaker Studio 1 font texture has been backed up at ${project_dir}\fonts\Conthrax\Conthrax.gms1.png
+Font font1 has been converted to font family Arial (Regular)
+GameMaker Studio 1 font texture has been backed up at ${project_dir}\fonts\font1\font1.gms1.png
+Font fontLarge has been converted to font family Arial (Regular)
+GameMaker Studio 1 font texture has been backed up at ${project_dir}\fonts\fontLarge\fontLarge.gms1.png
+Windows NSIS Installer Script has been set to default due to changes in GameMaker Studio 2
+Missing audiogroup for sound: 'mp3_title' - setting to default audio group
+Missing audiogroup for sound: 'mp3_gameroom' - setting to default audio group
+Game speed set to 60
+Added compatibility script 'action/action_another_room.gml'
+Added compatibility script 'action/action_end_sound.gml'
+Added compatibility script 'action/action_sound.gml'
+Added compatibility script 'instance/instance_create.gml'
+Added compatibility script 'object/object_get_depth.gml'
+Added compatibility script 'view/__view_get.gml'
+Added compatibility script 'view/__view_set.gml'
+Added compatibility script 'view/__view_set_internal.gml'
+Added compatibility script 'action/__init_action.gml'
+Added compatibility script 'view/__init_view.gml'
+Added compatibility script '__init_global.gml'
+Added compatibility script '__global_object_depths.gml'

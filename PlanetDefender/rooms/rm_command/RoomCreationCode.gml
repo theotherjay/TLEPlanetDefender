@@ -1,0 +1,1 @@
+script_execute(scr_rm_command_create);

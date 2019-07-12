@@ -1,0 +1,1 @@
+window_set_size(GAME_WIDTH,GAME_HEIGHT);

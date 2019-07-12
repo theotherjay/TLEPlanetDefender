@@ -1,0 +1,11 @@
+global.pt_damage2 = part_type_create();
+part_type_shape(global.pt_damage2,pt_shape_line);
+part_type_size(global.pt_damage2,0.10,0.40,0,0);
+part_type_scale(global.pt_damage2,2,2.50);
+part_type_color3(global.pt_damage2,4931740,4476795,3672696);
+part_type_alpha3(global.pt_damage2,0.30,0.10,0.05);
+part_type_speed(global.pt_damage2,1.52,4.82,0.09,0);
+part_type_direction(global.pt_damage2,0,359,0,0);
+part_type_orientation(global.pt_damage2,0,0,0,0,1);
+part_type_blend(global.pt_damage2,1);
+part_type_life(global.pt_damage2,5,73);
