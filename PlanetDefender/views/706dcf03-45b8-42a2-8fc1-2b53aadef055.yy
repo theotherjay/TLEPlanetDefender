@@ -8,7 +8,8 @@
         "67a296d7-b4a3-486b-a995-9de815a31869",
         "95cd76fe-ed78-4db7-b1d4-683c6b05bb2c",
         "80e3077f-ce66-4eca-8287-d84f4eda1b12",
-        "3c697f0f-9a66-403e-927a-c2c48f0db1d7"
+        "3c697f0f-9a66-403e-927a-c2c48f0db1d7",
+        "9924ddd0-dc1a-4cfc-8072-55a44a844441"
     ],
     "filterType": "GMObject",
     "folderName": "MenuButtons",
