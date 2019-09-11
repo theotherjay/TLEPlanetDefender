@@ -4,12 +4,33 @@ if(global.objPlanetOverlay == PlanetOverlayState.CommandOptions){
              
 }
 
+
+layerName = "GUI_Zoom_In";
+instMoneyLabel = instPosZoomInMoneyLabel;
+instPurchaseLabel = instPosZoomInPurchaseLabel; 
+instEnergyBar = instPosZoomInEnergyBar;
+instEnergyBarBottomRight = instPosZoomInEnergyBarBottomRight;
+instEnergyLabel = instPosZoomInEnergyLabel;
+instRaceBonusLabel = instPosZoomInRaceBonusLabel;
+
+zoomedIn = layer_get_visible(layerName);
+if(!zoomedIn)
+{
+	instMoneyLabel = instPosZoomOutMoneyLabel;
+	instPurchaseLabel = instPosZoomOutPurchaseLabel;
+	instEnergyBar = instPosZoomOutEnergyBar;
+	instEnergyLabel = instPosZoomOutEnergyLabel;
+	instEnergyBarBottomRight = instPosZoomOutEnergyBarBottomRight;
+	instRaceBonusLabel = instPosZoomOutRaceBonusLabel;
+}
+
+
 draw_set_font(fontLarge);
-draw_text_transformed_colour( 20, 
-                              300, 
+draw_text_transformed_colour( instMoneyLabel.x, 
+                              instMoneyLabel.y, 
                               string_hash_to_newline("Money:#" + string(global.playerCash)),
-                              1,
-                              1,
+                              (zoomedIn? .8: 2),
+                              (zoomedIn? .8: 2),
                               image_angle,
                               c_white, 
                              c_white, 
@@ -17,11 +38,11 @@ draw_text_transformed_colour( 20,
                              c_white,
                              1);
                              
-draw_text_transformed_colour( 15, 
-                              (global.sideBarPadding *15) + 10, 
+draw_text_transformed_colour( instPurchaseLabel.x, 
+                              instPurchaseLabel.y, 
                               string_hash_to_newline("Purchase#Defenses"), //Purchase
-                              1,
-                              1,
+                              (zoomedIn? 0.8: 2),
+                              (zoomedIn? 0.8: 2),
                               image_angle,
                               c_white, 
                              c_white, 
@@ -31,11 +52,21 @@ draw_text_transformed_colour( 15,
                            
 
 //planet energy              
-draw_text_colour((room_width / 2) - 310,  room_height - 40, string_hash_to_newline("Energy"), c_white,c_white,c_white,c_white, 1);
-draw_healthbar( (room_width / 2) - 180,
-                room_height - 20, 
-                (room_width / 2) + 240,
-                room_height - 10,  
+draw_text_transformed_colour(instEnergyLabel.x,  
+							 instEnergyLabel.y, 
+							 string_hash_to_newline("Energy"),
+							 (zoomedIn? 0.8: 2),
+							 (zoomedIn? 0.8: 2),
+							 image_angle,
+							 c_white,
+							 c_white,
+							 c_white,
+							 c_white, 1);
+							 
+draw_healthbar( instEnergyBar.x,
+                instEnergyBar.y, 
+                instEnergyBarBottomRight.x,
+                instEnergyBarBottomRight.y,  
                 (global.planetInstance.energy / PLAYER_PLANET_MAXENERGY) * 100,
                 c_gray, //background color
                 c_red, // min color
@@ -46,9 +77,9 @@ draw_healthbar( (room_width / 2) - 180,
                 
 draw_set_colour(c_white);
 draw_set_halign(fa_left);
-draw_text_transformed(room_width/2 - 180, room_height - 55, 
+draw_text_transformed(instRaceBonusLabel.x, instRaceBonusLabel.y, 
                       string_hash_to_newline("Race Bonus: " + raceBonus),        //: " + playerRaceText + "  
-                      0.6, 0.6, 1);
+                      (zoomedIn?0.4: 1.2), (zoomedIn?0.4: 1.2), 1);
                      
 draw_set_colour(c_yellow);
 

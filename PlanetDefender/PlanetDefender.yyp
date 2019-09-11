@@ -999,6 +999,14 @@
             }
         },
         {
+            "Key": "482b7ab6-17cf-49a9-86bc-f7f9cbaed5c0",
+            "Value": {
+                "id": "c59b9bd9-b16a-4a0a-b1f8-03d7890898f6",
+                "resourcePath": "scripts\\fnDialogFadeOut\\fnDialogFadeOut.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "483e0858-6e07-496d-8feb-438079f17374",
             "Value": {
                 "id": "ee65333a-818f-40f0-af49-7a2fac030a6e",
@@ -1020,6 +1028,14 @@
                 "id": "1d0c4375-39f7-47e8-81cb-00ced72eddf2",
                 "resourcePath": "scripts\\@action_end_sound\\action_end_sound.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "4b5dd99d-cdfd-441b-af5a-39aae21d0e97",
+            "Value": {
+                "id": "02cc1127-e239-4d86-8281-c99f739ad4fc",
+                "resourcePath": "views\\4b5dd99d-cdfd-441b-af5a-39aae21d0e97.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -1307,6 +1323,14 @@
             "Value": {
                 "id": "cac6c5bb-3e58-4bac-835c-a2f4cfd00360",
                 "resourcePath": "objects\\obj_cmdbutton\\obj_cmdbutton.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "67fb2aed-fcfa-4a77-9792-a73f9e02319c",
+            "Value": {
+                "id": "64edbda3-bddb-479f-bf39-22edff52e879",
+                "resourcePath": "objects\\objDialogFadeOutController\\objDialogFadeOutController.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -2239,6 +2263,14 @@
             }
         },
         {
+            "Key": "c037c214-62ef-49b7-99af-02e6106867e7",
+            "Value": {
+                "id": "bf4e4f5d-1086-4d4e-8987-ad9ba20e8ee1",
+                "resourcePath": "objects\\objPosition\\objPosition.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "c174bebe-f92d-4aa1-bea2-8dfe074a1c52",
             "Value": {
                 "id": "eb5f419a-bd50-45fe-b952-370d1b6bd009",
@@ -3037,6 +3069,7 @@
         "20dbd32a-d48f-42ee-87ee-bc38981eff0d",
         "d1885b82-7140-4f05-ad4f-ded6d97b1f96",
         "a67989e3-c264-4e75-97b2-fa6ea116dab7",
+        "482b7ab6-17cf-49a9-86bc-f7f9cbaed5c0",
         "1e082d8a-0b27-4cc8-839d-517119385803",
         "c5bd58c7-cf7d-40c2-a49f-f1853547d47e",
         "e21bbcf2-2d0a-43af-afc3-258f38477df1",
