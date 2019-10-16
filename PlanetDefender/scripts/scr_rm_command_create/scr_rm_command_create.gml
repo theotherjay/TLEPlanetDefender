@@ -15,8 +15,8 @@ if(global.rm_command_initialized == false)
     global.systemShipKills = 0;
     
     var systemCount = 10;
-    var systemGridH = __view_get( e__VW.HView, 0 ) / 12;
-    var systemGridW = __view_get( e__VW.WView, 0 ) / 12;
+    //var systemGridH = __view_get( e__VW.HView, 0 ) / 12;
+    //var systemGridW = __view_get( e__VW.WView, 0 ) / 12;
     var systemMinDistance = 50; // The minimum distance between randomly placed systems.
     var i;
 
@@ -81,6 +81,9 @@ if(global.rm_command_initialized == false)
 
 //Create planet instances
 var i;
+var iWins = 0;
+var iLosses = 0;
+
 for(i=0; i< array_length_1d(global.systemX); i++)
 {
     var planetSystem = instance_create(global.systemX[i], global.systemY[i], planet_icon);
@@ -95,16 +98,24 @@ for(i=0; i< array_length_1d(global.systemX); i++)
         if(global.systemBattleStatus[i] == "lose")
         {
             sprite_index = spr_planet_defeated_icon;
+			iLosses++;
         }
         else if (global.systemBattleStatus[i] == "win")
         {
             sprite_index = spr_planet_win_icon;
+			iWins++;
         }
         else
         {
             sprite_index = global.systemPlanetType[i];
         }
     }                  
+}
+
+//TODO: modify this section to display different messages from the General based on the number of wins/losses
+if(iWins + iLosses > 0)
+{
+	layer_set_visible("Dialog", false);
 }
 
 var i = irandom_range(1, 3);
